@@ -20,8 +20,12 @@ function updateClock() {
     const clock = document.getElementById('clock');
     // НУЖНО ПОГУГЛИТЬ ЧТО ТАКОЕ new Date()
     const now = new Date();
-    const hours = now.getHours()
-    const minutes = now.getMinutes()
-    const seconds = now.getSeconds()
+    const hours = zero(now.getHours())
+    const minutes = zero(now.getMinutes())
+    const seconds = zero(now.getSeconds())
     clock.textContent = hours + ':' + minutes + ':' + seconds;
 }
+
+function zero (i) {
+    return (i<10)? "0"+i : i
+};

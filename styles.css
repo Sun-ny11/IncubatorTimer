@@ -1,8 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     background-color: rgb(0, 0, 0);
     color: rgb(54, 255, 47);
     font-family: 'Russo One', sans-serif;
-    font-size: 50px
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
   }
   
   
@@ -16,11 +22,12 @@ body {
   
   
   .clockCase {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
-  
   
   .buttonCase {
     display: flex;
