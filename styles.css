@@ -33,4 +33,31 @@ body {
     display: flex;
     justify-content: center;
     
+    
+  }
+
+  @media (max-width: 750px){
+    body{
+      font-size: 40px;
+    }
+    button {
+      font-size: 10px;
+    }
+    
+
+  }
+  @media (max-width: 450px){
+    body{
+      font-size: 30px;
+    }
+    button {
+      font-size: 13px;
+      margin-bottom: 7px;
+      
+    }
+    .buttonCase{
+      flex-direction: column;
+    }
+    
+
   }
